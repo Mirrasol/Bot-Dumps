@@ -1,10 +1,15 @@
 import httpx
 import time
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+BOT_TOKEN = os.getenv('BOT_TOKEN')
 
 
 API_URL = 'https://api.telegram.org/bot'
 API_FOX_URL = 'https://randomfox.ca/floof/'
-BOT_TOKEN = '7274875670:AAHD2swgWpB308UVqg3xEht_-yFBgnYgBy4'
 TEXT = 'Here be potatoes and dragons!'
 FOX_TEXT = 'Why, catch some fox!'
 ERROR_TEXT = 'Не пришла картинка с лисом :('

@@ -15,3 +15,6 @@ echo:
 
 game:
 	uv run guess_game_bot.py
+
+elder_echo:
+	uv run elder_echo_bot/main.py

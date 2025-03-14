@@ -21,6 +21,7 @@ button2 = KeyboardButton(text='Bell Peppers')
 
 keyboard = ReplyKeyboardMarkup(keyboard=[[button1, button2]])
 
+
 @dp.message(CommandStart())
 async def process_start_command(message: Message):
     await message.answer(

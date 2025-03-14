@@ -16,8 +16,8 @@ BOT_TOKEN = os.getenv('BOT_TOKEN')
 bot = Bot(token=BOT_TOKEN)
 dp = Dispatcher()
 
-button1 = KeyboardButton(text='Owls')
-button2 = KeyboardButton(text='Bell Peppers')
+button1 = KeyboardButton(text='Owls 🦉')
+button2 = KeyboardButton(text='Bell Peppers 🫑')
 
 keyboard = ReplyKeyboardMarkup(keyboard=[[button1, button2]])
 
@@ -30,15 +30,15 @@ async def process_start_command(message: Message):
     )
 
 
-@dp.message(F.text == 'Owls')
+@dp.message(F.text == 'Owls 🦉')
 async def process_owls_reply(message: Message):
     await message.answer(
-        text='Yep, those are beautiful feathered dinos of our time',
+        text='Yep, those are the beautiful feathered dinos of our time.',
         reply_markup=ReplyKeyboardRemove(),
     )
 
 
-@dp.message(F.text == 'Bell Peppers')
+@dp.message(F.text == 'Bell Peppers 🫑')
 async def process_peppers_reply(message: Message):
     await message.answer(
         text='Well, if you squint really hard...',

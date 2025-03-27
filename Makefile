@@ -18,6 +18,3 @@ game:
 
 elder_echo:
 	uv run elder_echo_bot/main.py
-
-rps:
-	uv run rock_paper_scissors_bot/main.py
